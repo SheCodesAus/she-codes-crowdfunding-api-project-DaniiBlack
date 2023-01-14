@@ -1,34 +1,53 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .models import Project
-from .serializers import ProjectSerializer
-
-# Create your views here.
+from .models import Project, Pledge
+from .serializers import ProjectSerializer, PledgeSerializer
+from django.http import Http404
+from rest_framework import status
 
 class ProjectList(APIView):
     def get(self, request):
         projects = Project.objects.all()
         serializer = ProjectSerializer(projects, many=True)
-        # from the example image in github, you can see a visualisation of what is happening here:
         return Response(serializer.data)
-
-def post(self, request):
-    # instead of saying 'all' like above, we create
-    serializer = ProjectSerializer(data=request.data)
-    # is valid?
-    if serializer.is_valid():
-        serializer.save()
-        return Response(serializer.data)
-        # the above, is what we want our end point to do (excluding how to save a thing.)
-
-# sometimes you may want to check to ensure the object is in the right 'Set' for instance if Ollie is te Fidofund and wants a particular pledge, software may say yes if pledge is one you created - no if you are not the owner(/user who created)
-# as such, we have split the get from the response. The Get may become more complex, so. Split it out. 
+    def post(self, request):
+        serializer = ProjectSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(
+                serializer.data,
+                status=status.HTTP_201_CREATED
+            )
+        return Response(
+            serializer.errors,
+            status=status.HTTP_400_BAD_REQUEST
+        )
 class ProjectDetail(APIView):
     def get_object(self, pk):
-        return Project.objects.get(pk=pk)
-# object.get is a python thing, and expects an argument called pk. We are calling pk and assigning it pk (primary key)
-
+        try:
+            return Project.objects.get(pk=pk)
+        except Project.DoesNotExist:
+            raise Http404
     def get(self, request, pk):
         project = self.get_object(pk)
         serializer = ProjectSerializer(project)
         return Response(serializer.data)
+
+class PledgeList(APIView):
+    def get (self, request):
+        pledges = Pledge.objects.all()
+        serializer = PledgeSerializer(pledges, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = PledgeSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(
+                serializer.data,
+                status=status.HTTP_201_CREATED
+            )
+        return Response(
+            serializer.errors,
+            status=status.HTTP_400_BAD_REQUEST
+        )
