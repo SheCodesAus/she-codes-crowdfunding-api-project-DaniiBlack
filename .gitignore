@@ -5,3 +5,15 @@ __pycache__/
 *.sqlite3
 *.vscode
 staticfiles
+
+
+An example to add into a POST, through Insomnia, when you download that.
+JSON
+{
+"title": "FidoFund",
+"description": "Fido hurt his leg",
+"goal": 150
+"image": "https://via.placeholder.com/300.jpg",
+"is_open": true,
+"owner": "Oliver"
+}
