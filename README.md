@@ -59,6 +59,7 @@
 - A screenshot of Insomnia, demonstrating a token being returned.
 - Stepbystepinstructionsforhowtoregisteranewuserandcreateanewproject(i.e.endpointsandbody data).
 - Your refined API specification and Database Schema.
+
 ***Part B Submission***
 > Please submit the following:
 - A link to the GitHub repository containing the code for your project.
