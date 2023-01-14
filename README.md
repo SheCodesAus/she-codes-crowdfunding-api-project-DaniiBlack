@@ -33,10 +33,10 @@
 - Use Token Authentication.
 - Implement responsive design.
   
-*Additional Notes*
-No additional libraries or frameworks, other than what we use in class,are allowed unless approved by the Lead Mentor. 
-  1. Bonus points are meaningless.
-  2. Wwwhile this is a crowdfunding website, actual money transactions are out of scope for this project.
+*Additional Notes*:
+  1. No additional libraries or frameworks, other than what we use in class,are allowed unless approved by the Lead Mentor. 
+  2. Bonus points are meaningless.
+  3. Wwwhile this is a crowdfunding website, actual money transactions are out of scope for this project.
 
 ### MVP Plan Submission
 > Please submit the following:
