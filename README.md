@@ -3,7 +3,7 @@
 ## Project Description
 > Kickstarter,GoFundMe,Kiva,Change.org,Patreon... All of these different websites have something in common: they provide a platform for people to fund projects thattheybelievein,buttheyallhaveaslightlydifferent approach. You are going to create your own crowdfunding website, and put your own spin on it!
 
-### Project Requirements
+## Project Requirements
 > Your crowdfunding project must:
 - Be separated into two distinct projects: an API built using the Django Rest Framework and a website built using React.
 - Have a cool name, bonus points if it includes a pun and/or missing vowels. Seehttps://namelix.com/1 for inspiration.
@@ -33,11 +33,10 @@
 - Use Token Authentication.
 - Implement responsive design.
   
-**Additional Notes**
+*Additional Notes*
 No additional libraries or frameworks, other than what we use in class,are allowed unless approved by the Lead Mentor. 
   1. Bonus points are meaningless.
-
-*Note that while this is a crowdfunding website, actual money transactions are out of scope for this project.*
+  2. Wwwhile this is a crowdfunding website, actual money transactions are out of scope for this project.
 
 ### MVP Plan Submission
 > Please submit the following:
@@ -51,7 +50,7 @@ No additional libraries or frameworks, other than what we use in class,are allow
 - Colour Scheme.
 - Heading and body font(s).
   
-- **Part A Submission**
+***Part A Submission**
 > Please submit the following:
 - A link to the GitHub repository containing the code for your project.
 - A link to the deployed project.
@@ -59,7 +58,9 @@ No additional libraries or frameworks, other than what we use in class,are allow
 - A screenshot of Insomnia, demonstrating a successful POST method for any endpoint.
 - A screenshot of Insomnia, demonstrating a token being returned.
 - Stepbystepinstructionsforhowtoregisteranewuserandcreateanewproject(i.e.endpointsandbody data).
-- Your refined API specification and Database Schema.Part B SubmissionPlease submit the following:
+- Your refined API specification and Database Schema.
+***Part B Submission***
+> Please submit the following:
 - A link to the GitHub repository containing the code for your project.
 - A link to the deployed project.
 - A screenshot of the home page.
