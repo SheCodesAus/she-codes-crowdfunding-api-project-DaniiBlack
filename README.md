@@ -1,13 +1,10 @@
-SHE{CODES}Plus
-Danielle's crowdfunding project
-
-
-## Project: Crowdfunding
-### Project Description
+*SHE{CODES}Plus*
+# Dani's Project: Crowdfunding
+## Project Description
 > Kickstarter,GoFundMe,Kiva,Change.org,Patreon... All of these different websites have something in common: they provide a platform for people to fund projects thattheybelievein,buttheyallhaveaslightlydifferent approach. You are going to create your own crowdfunding website, and put your own spin on it!
 
 ### Project Requirements
-Your crowdfunding project must:
+> Your crowdfunding project must:
 - Be separated into two distinct projects: an API built using the Django Rest Framework and a website built using React.
 - Have a cool name, bonus points if it includes a pun and/or missing vowels. Seehttps://namelix.com/1 for inspiration.
 - Have a clear target audience.
@@ -43,4 +40,29 @@ No additional libraries or frameworks, other than what we use in class,are allow
 *Note that while this is a crowdfunding website, actual money transactions are out of scope for this project.*
 
 ### MVP Plan Submission
-Please submit the following:▢The title of your website.▢A paragraph detailing the purpose and target audience for your website.▢The features your MVP will include.▢At least 3 additional features you would like to include if you reach your MVP.▢An API specification.▢A database schema.▢Wireframes.▢Colour Scheme.▢Heading and body font(s).Part A SubmissionPlease submit the following:▢A link to the GitHub repository containing the code for your project.▢A link to the deployed project.▢A screenshot of Insomnia, demonstrating a successful GET method for any endpoint.▢A screenshot of Insomnia, demonstrating a successful POST method for any endpoint.▢A screenshot of Insomnia, demonstrating a token being returned.▢Stepbystepinstructionsforhowtoregisteranewuserandcreateanewproject(i.e.endpointsandbody data).▢Your refined API specification and Database Schema.Part B SubmissionPlease submit the following:▢A link to the GitHub repository containing the code for your project.▢A link to the deployed project.▢A screenshot of the home page.▢A screenshot of the project creation form.▢A screenshot of a project with pledges.▢A screenshot of the resulting page when an unauthorized user attempts to edit a project.
+> Please submit the following:
+- The title of your website.
+- A paragraph detailing the purpose and target audience for your website.
+- The features your MVP will include.
+- At least 3 additional features you would like to include if you reach your MVP.
+- An API specification.
+- A database schema.
+- Wireframes.
+- Colour Scheme.
+- Heading and body font(s).
+  
+- **Part A Submission**
+> Please submit the following:
+- A link to the GitHub repository containing the code for your project.
+- A link to the deployed project.
+- A screenshot of Insomnia, demonstrating a successful GET method for any endpoint.
+- A screenshot of Insomnia, demonstrating a successful POST method for any endpoint.
+- A screenshot of Insomnia, demonstrating a token being returned.
+- Stepbystepinstructionsforhowtoregisteranewuserandcreateanewproject(i.e.endpointsandbody data).
+- Your refined API specification and Database Schema.Part B SubmissionPlease submit the following:
+- A link to the GitHub repository containing the code for your project.
+- A link to the deployed project.
+- A screenshot of the home page.
+- A screenshot of the project creation form.
+- A screenshot of a project with pledges.
+- A screenshot of the resulting page when an unauthorized user attempts to edit a project.
