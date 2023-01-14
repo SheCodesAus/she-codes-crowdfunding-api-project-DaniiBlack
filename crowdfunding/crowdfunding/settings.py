@@ -29,8 +29,11 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# We added: rest and projects. rest is a framework we've installed, projects is what we are building 
+# note: always use lower case for your app or project names, Ollie's advice. 
 INSTALLED_APPS = [
+    'projects.apps.ProjectsConfig',
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
