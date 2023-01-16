@@ -31,28 +31,22 @@
 3. a blog page for users who own projects and are actively fundraising for their cause, to also post content if they are artists/ writers/ journalists etc 
 4. *tentive feature: live(ish) exchange rates for donating to international projects such as doctors without borders
 - [x] An API specification.
-  - **USER**
-    - POST: create user
-    - PUT: user/userid(pk), edit user
-    - DELETE: delete user
-    - GET: return user's information (id, email address, name etc)
-  - **PROJECT**
-    - POST: /project/pledge, to pledge to project
-    - PUT: project/projectid, edit project and place project on hold status (not currently acception new supporters)
-    - DELETE: project/projectid, delete a project
-    - GET: project/projects, view all (potentially could use a query param here project/projects?queryParamGoesHere for viewing all by category)
   - **PLEDGE**
     - POST: /pledge, create pledge
     - PUT: ?
     - DELETE: pledge/pledgeid, delete a pledge (admin only)
     - GET: pledge/pledges, view all pledges. Can use media queries here also? Can a user view all pledges made through the site or only their own? Probably all, automatically set to annonymous. 
-- [x] A database schema.
+  - **PROJECT**
+    - POST: /project/pledge, to pledge to project
+    - PUT: project/projectid, edit project and place project on hold status (not currently acception new supporters)
+    - DELETE: project/projectid, delete a project
+    - GET: project/projects, view all (potentially could use a query param here project/projects?queryParamGoesHere for viewing all by category)
   - **USER**
-    - id
-    - username
-    - email address
-    - password
-    - profile picture
+    - POST: create user
+    - PUT: user/userid(pk), edit user
+    - DELETE: delete user
+    - GET: return user's information (id, email address, name etc)
+- [x] A database schema.
   - **PLEDGE**
     - total/ goal
     - amount currently at
@@ -68,6 +62,12 @@
     - target amount
     - creation date
     - currently accepting new supporters (y/n boolean, probably)
+  - **USER**
+    - id
+    - username
+    - email address
+    - password
+    - profile picture
 - [] Wireframes.
 - [x] Colour Scheme. Black, white. Maybe accents of colour tbd.
 - [x] Heading and body font(s). Helvetica
