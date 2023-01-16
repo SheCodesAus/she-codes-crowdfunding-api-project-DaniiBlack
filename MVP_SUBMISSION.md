@@ -29,6 +29,9 @@
   13. helpful error messaging
   14. token Authentication
   15. responsive design
+
+---
+
 - [x] At least 3 additional features you would like to include if you reach your MVP
 1. ability to opt for purchasing an item/items, or for donation of money towards a project
 2. ability to search by category
