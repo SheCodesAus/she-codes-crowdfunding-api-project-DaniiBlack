@@ -1,9 +1,13 @@
-### MVP Plan Submission
+# MVP Plan Submission
 > Please submit the following:
 - [x] The title of your website.
   - Jolt
 - [x] A paragraph detailing the purpose and target audience for your website.
-  - Support local and international initiatives run by activists. A lot of people aren't able to make it to a riot or through med school to join doctors without borders, and we all know the housing market is fvcked meaning we aren't easily able to take those in need into our homes. Through Jolt, you are able to contribute, with full transparency of where every dollar goes. You can support activist magasines, buy gear for rioters or donate money to verified charities, activist groups and social organisations.
+  - > Support local and international initiatives run by activists. A lot of people aren't able to make it to a riot or through med school to join doctors without borders, and we all know the housing market is fvcked meaning we aren't easily able to take those in need into our homes. Through Jolt, you are able to contribute, with full transparency of where every dollar goes. You can support activist magasines, buy gear for rioters or donate money to verified charities, activist groups and social organisations.
+- [x] Colour Scheme.
+  - Black, white. Maybe accents of colour tbd.
+- [x] Heading and body font(s).
+  - Helvetica
 - [x] The features your MVP will include.
   1. Title
   2. Owner (a user)
@@ -30,22 +34,28 @@
 2. ability to search by category
 3. a blog page for users who own projects and are actively fundraising for their cause, to also post content if they are artists/ writers/ journalists etc 
 4. *tentive feature: live(ish) exchange rates for donating to international projects such as doctors without borders
+
+---
+
 - [x] An API specification.
   - **PLEDGE**
-    - POST: /pledge, create pledge
+    - POST: </pledge>, create pledge
     - PUT: ?
-    - DELETE: pledge/pledgeid, delete a pledge (admin only)
-    - GET: pledge/pledges, view all pledges. Can use media queries here also? Can a user view all pledges made through the site or only their own? Probably all, automatically set to annonymous. 
+    - DELETE: <pledge/pledgeid>, delete a pledge (admin only)
+    - GET: <pledge/pledges>, view all pledges. Can use media queries here also? Can a user view all pledges made through the site or only their own? Probably all, automatically set to annonymous. 
   - **PROJECT**
-    - POST: /project/pledge, to pledge to project
-    - PUT: project/projectid, edit project and place project on hold status (not currently acception new supporters)
-    - DELETE: project/projectid, delete a project
-    - GET: project/projects, view all (potentially could use a query param here project/projects?queryParamGoesHere for viewing all by category)
+    - POST: </project/pledge>, to pledge to project
+    - PUT: <project/projectid>, edit project and place project on hold status (not currently acception new supporters)
+    - DELETE: <project/projectid>, delete a project
+    - GET: <project/projects>, view all (potentially could use a query param here project/projects?queryParamGoesHere for viewing all by category)
   - **USER**
     - POST: create user
-    - PUT: user/userid(pk), edit user
+    - PUT: <user/userid(pk)>, edit user
     - DELETE: delete user
     - GET: return user's information (id, email address, name etc)
+
+---
+
 - [x] A database schema.
   - **PLEDGE**
     - total/ goal
@@ -68,9 +78,12 @@
     - email address
     - password
     - profile picture
+
+---
+
 - [ ] Wireframes.
-- [x] Colour Scheme. Black, white. Maybe accents of colour tbd.
-- [x] Heading and body font(s). Helvetica
+
+---
 
 **TODO:** 
 1. What fields per route for the API?
