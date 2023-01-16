@@ -68,7 +68,7 @@
     - email address
     - password
     - profile picture
-- [] Wireframes.
+- [ ] Wireframes.
 - [x] Colour Scheme. Black, white. Maybe accents of colour tbd.
 - [x] Heading and body font(s). Helvetica
 
