@@ -8,12 +8,39 @@ staticfiles
 
 
 An example to add into a POST, through Insomnia, when you download that.
-JSON
-{
-"title": "FidoFund",
-"description": "Fido hurt his leg",
-"goal": 150
-"image": "https://via.placeholder.com/300.jpg",
-"is_open": true,
-"owner": "Oliver"
-}
+# JSON
+# {
+# "title": "FidoFund",
+# "description": "Fido hurt his leg",
+# "goal": 150
+# "image": "https://via.placeholder.com/300.jpg",
+# "is_open": true,
+# "owner": "Oliver"
+# }
+# 
+# GET (pledges endpoint)
+# REQUEST
+# {
+# "amount": 1,
+# "comment": "hope fido get's better",
+# "anonymous": false,
+# "supporter": "Ollie",
+# "project_id": 1
+# }
+# get back:
+# {
+# "id": 1,
+# "amount": 1,
+# "comment": "hope fido get's better",
+# "anonymous": false,
+# "supporter": "Ollie",
+# "project_id": 1
+# }
+# 
+# We don't have the amount of pledges, nor the total amount saved towards the goal.
+# 
+# When the proect list is acessed we want some succinct info 
+# when the project detailed list is accessed that's when we want more detail (for example, on the homepage, we do want a high overview of the funds. But not until on a project page do we want more details. 
+
+project list should only have project information return. 
+project detail 
