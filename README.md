@@ -40,15 +40,15 @@
 
 ### MVP Plan Submission
 > Please submit the following:
-- [] The title of your website.
-- [] A paragraph detailing the purpose and target audience for your website.
-- [] The features your MVP will include.
-- [] At least 3 additional features you would like to include if you reach your MVP.
-- [] An API specification.
-- [] A database schema.
+- [x] The title of your website.
+- [x] A paragraph detailing the purpose and target audience for your website.
+- [x] The features your MVP will include.
+- [x] At least 3 additional features you would like to include if you reach your MVP.
+- [x] An API specification.
+- [x] A database schema.
 - [] Wireframes.
-- [] Colour Scheme.
-- [] Heading and body font(s).
+- [x] Colour Scheme.
+- [x] Heading and body font(s).
   
 ***Part A Submission**
 > Please submit the following:
