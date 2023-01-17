@@ -3,7 +3,7 @@
 - [x] The title of your website.
   - Jolt
 - [x] A paragraph detailing the purpose and target audience for your website.
-  - > Support local and international initiatives run by activists. A lot of people aren't able to make it to a riot or through med school to join doctors without borders, and we all know the housing market is fvcked meaning we aren't easily able to take those in need into our homes. Through Jolt, you are able to contribute, with full transparency of where every dollar goes. You can support activist magasines, buy gear for rioters or donate money to verified charities, activist groups and social organisations.
+  > Support local and international initiatives run by activists. A lot of people aren't able to make it to a riot or through med school to join doctors without borders, and we all know the housing market is fvcked meaning we aren't easily able to take those in need into our homes. Through Jolt, you are able to contribute, with full transparency of where every dollar goes. You can support activist magasines, buy gear for rioters or donate money to verified charities, activist groups and social organisations.
 - [x] Colour Scheme.
   - Black, white. Maybe accents of colour tbd.
 - [x] Heading and body font(s).
