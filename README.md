@@ -52,7 +52,7 @@
 [x] Heading and body font(s).
   
 ***Part A Submission**
-> Please submit the following:
+> Please submit the following:  
 [ ] A link to the GitHub repository containing the code for your project.  
 [ ] A link to the deployed project.  
 [ ] A screenshot of Insomnia, demonstrating a successful GET method for any endpoint.  
