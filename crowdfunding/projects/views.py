@@ -1,4 +1,4 @@
-from rest_framework.views import APIView
+from rest_framework.views import APIView, generics
 from rest_framework.response import Response
 from .models import Project, Pledge
 from .serializers import ProjectSerializer, ProjectDetailSerializer, PledgeSerializer
@@ -13,7 +13,7 @@ class ProjectList(APIView):
     def post(self, request):
         serializer = ProjectSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
+            serializer.save(owner=request.user)
             return Response(
                 serializer.data,
                 status=status.HTTP_201_CREATED
@@ -33,7 +33,13 @@ class ProjectDetail(APIView):
         serializer = ProjectDetailSerializer(project)
         return Response(serializer.data)
 
-class PledgeList(APIView):
+class PledgeList(generics.ListCreateAPIView):
+    queryset = Pledge.objects.all()
+    serializer_class = PledgeSerializer
+
+    def perform_create(self, serializer):
+        serializer.save(supporter=self.request.user)
+
     def get (self, request):
         pledges = Pledge.objects.all()
         serializer = PledgeSerializer(pledges, many=True)
@@ -42,7 +48,7 @@ class PledgeList(APIView):
     def post(self, request):
         serializer = PledgeSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
+            serializer.save(owner=request.user)
             return Response(
                 serializer.data,
                 status=status.HTTP_201_CREATED

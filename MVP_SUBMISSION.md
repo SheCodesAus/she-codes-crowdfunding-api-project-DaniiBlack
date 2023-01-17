@@ -61,26 +61,26 @@
 
 - [x] A database schema.
   - **PLEDGE**
-    - total/ goal
-    - amount currently at
-    - project the pledge is for
-    - the supporter/ user who created the pledge
-    - annonymous or not
+    - total/ goal | integer
+    - amount currently at | integer
+    - project the pledge is for | string
+    - the supporter/ user who created the pledge | string
+    - annonymous or not | boolean
   - **PROJECT**
-    - id
-    - title
-    - owner
-    - description
-    - image
-    - target amount
-    - creation date
-    - currently accepting new supporters (y/n boolean, probably)
+    - id | integer
+    - title | string
+    - owner | string
+    - description | string
+    - image | string
+    - target amount | integer
+    - creation date | date (?)
+    - currently accepting new supporters | boolean
   - **USER**
-    - id
-    - username
-    - email address
-    - password
-    - profile picture
+    - id | integer (or would an id be a number, actually?)
+    - username | string
+    - email address | string
+    - password | string
+    - profile picture | string
 
 ---
 
