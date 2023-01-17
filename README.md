@@ -52,19 +52,19 @@
   
 ***Part A Submission**
 > Please submit the following:
-[ ] A link to the GitHub repository containing the code for your project.
-[ ] A link to the deployed project.
-[ ] A screenshot of Insomnia, demonstrating a successful GET method for any endpoint.
-[ ] A screenshot of Insomnia, demonstrating a successful POST method for any endpoint.
-[ ] A screenshot of Insomnia, demonstrating a token being returned.
-[ ] Stepbystepinstructionsforhowtoregisteranewuserandcreateanewproject(i.e.endpointsandbody data).
-[ ] Your refined API specification and Database Schema.
+[ ] A link to the GitHub repository containing the code for your project.  
+[ ] A link to the deployed project.  
+[ ] A screenshot of Insomnia, demonstrating a successful GET method for any endpoint.  
+[ ] A screenshot of Insomnia, demonstrating a successful POST method for any endpoint.  
+[ ] A screenshot of Insomnia, demonstrating a token being returned.  
+[ ] Stepbystepinstructionsforhowtoregisteranewuserandcreateanewproject(i.e.endpointsandbody data).  
+[ ] Your refined API specification and Database Schema.  
 
-***Part B Submission**
-> Please submit the following:
-[ ] A link to the GitHub repository containing the code for your project.
-[ ] A link to the deployed project.
-[ ] A screenshot of the home page.
-[ ] A screenshot of the project creation form.
-[ ] A screenshot of a project with pledges.
-[ ] A screenshot of the resulting page when an unauthorized user attempts to edit a project.
+***Part B Submission**  
+> Please submit the following:  
+[ ] A link to the GitHub repository containing the code for your project.  
+[ ] A link to the deployed project.  
+[ ] A screenshot of the home page.  
+[ ] A screenshot of the project creation form.  
+[ ] A screenshot of a project with pledges.  
+[ ] A screenshot of the resulting page when an unauthorized user attempts to edit a project.  
