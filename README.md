@@ -39,6 +39,7 @@
   3. Wwwhile this is a crowdfunding website, actual money transactions are out of scope for this project.
 
 ### MVP Plan Submission
+---
 > Please submit the following:
 [x] The title of your website.
 [x] A paragraph detailing the purpose and target audience for your website.
@@ -53,8 +54,8 @@
 ***Part A Submission**
 > Please submit the following:
 [ ] A link to the GitHub repository containing the code for your project.  
-- [ ] A link to the deployed project.  
-- [ ] A screenshot of Insomnia, demonstrating a successful GET method for any endpoint.  
+[ ] A link to the deployed project.  
+[ ] A screenshot of Insomnia, demonstrating a successful GET method for any endpoint.  
 - [ ] A screenshot of Insomnia, demonstrating a successful POST method for any endpoint.  
 - [ ] A screenshot of Insomnia, demonstrating a token being returned.  
 - [ ] Stepbystepinstructionsforhowtoregisteranewuserandcreateanewproject(i.e.endpointsandbody data).  
