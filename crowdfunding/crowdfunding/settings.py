@@ -37,7 +37,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # below asterisk = 'wild card' meaning any host is an allowed host. 
 ALLOWED_HOSTS = ['*']
 CORS_ALLOW_ALL_ORIGINS = True
-CSRF_TRUSTED_ORIGINS = ['https//*.fly.dev']
+CSRF_TRUSTED_ORIGINS = ['https://*.fly.dev']
 
 
 # Application definition
