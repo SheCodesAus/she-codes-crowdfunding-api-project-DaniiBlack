@@ -10,41 +10,45 @@ Please submit the following:
     - see images folder
 [x] A screenshot of insomnia, demonstrating a token being returned
 [ ] Step by step instructions for how to register a new user and create a new project (ie. endpoints and body data)
-[ ] Your refined API specification and Database schema
+[x] Your refined API specification and Database schema
+#### Refined database schema
+  **PLEDGE**
+        - total/ goal | integer
+        - project the pledge is for | relationship. Foreign Key
+        - the supporter/ user who created the pledge | string
+        - annonymous or not | boolean
+    
+  **PROJECT**
+        - id | integer
+        - title | string
+        - owner | string
+        - description | string
+        - image | string
+        - target amount | integer
+        - creation date | date 
+        - currently accepting new supporters | boolean
 
+  **USER**
+        - id | number
+        - username | string
+        - email address | string
+        - password | string
+        - profile picture | string
 
-Select a prisoner, donate towards their bail. 
+#### API specification
 
-A database schema.
- 
-**PLEDGE**
-[x] total/ goal | integer
-~~[ ] amount currently at | integer~~ (count all current pledges each time)
-[x] project the pledge is for | ~~string~~ relationship. Foreign Key
-[x] the supporter/ user who created the pledge | string
-[x] annonymous or not | boolean
-
-**PROJECT**
-[ ] id | integer
-[ ] title | string
-[ ] owner | string
-[ ] description | string
-[ ] image | string
-[ ] target amount | integer
-[ ] creation date | date (?)
-[ ] currently accepting new supporters | boolean
-
-**USER**
-[ ] id | integer (or would an id be a number, actually?)
-[ ] username | string
-[ ] email address | string
-[ ] password | string
-[ ] profile picture | string
-
-User flows
-- view website without an account
-- create account (log in, log out)
-- create project (view project, check progress, add target amount, add description, cannot edit target amount or description without admin permissions(?))
-- submit pledge/s
-
-
+  **PLEDGE**
+    - POST: </pledge>, create pledge
+    - PUT: ?
+    - DELETE: <pledge/pledgeid>, delete a pledge (admin only)
+    - GET: <pledge/pledges>, view all pledges. Can use media queries here also? Can a user view all pledges made through the site or only their own? Probably all, automatically set to annonymous. 
+  **PROJECT**
+    - POST: </project/pledge>, to pledge to project
+    - PUT: <project/projectid>, edit project and place project on hold status (not currently acception new supporters)
+    - DELETE: <project/projectid>, delete a project
+    - GET: <project/projects>, view all (potentially could use a query param here project/projects?queryParamGoesHere for viewing all by category)
+  **USER**
+    - POST: create user
+    - PUT: <user/userid(pk)>, edit user
+    - DELETE: delete user
+    - GET: return user's information (id, email address, name etc)
