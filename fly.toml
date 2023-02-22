@@ -42,4 +42,4 @@ processes = []
   url_prefix = "/static/"
 [mounts]
     source = "dbvol"
-    destination = "/dvol"
+    destination = "/dbvol"
