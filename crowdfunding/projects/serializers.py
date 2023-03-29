@@ -25,7 +25,6 @@ class ProjectSerializer(serializers.Serializer):
     date_created = serializers.DateTimeField()
     owner = serializers.ReadOnlyField(source='owner.id')
     pledges = PledgeSerializer(many=True, read_only=True)
-    owner = serializers.ReadOnlyField(source='owner.id')
 
     def create(self, validated_data):
         return Project.objects.create(**validated_data)
